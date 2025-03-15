@@ -1,0 +1,121 @@
+/* Chung */
+#header .sub-nav,
+#header .sub-nav .sub-nav-child {
+    display: none;
+    position: absolute;
+    width: 230px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#header .sub-nav > li > a,
+#header .sub-nav .sub-nav-child li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 350;
+    color: #000;
+    text-decoration: none;
+}
+/* Header */
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    font-family: 'Roboto';
+    background-color: #272F54;
+    z-index: 1;
+}
+
+#header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+#header .nav > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 6px;
+}
+
+#header .nav > li > a {
+    font-size: 14px;
+    line-height: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#header .nav li .home-icon {
+    font-size: 16px;
+}
+
+#header .nav li .down-arrow-icon {
+    font-size: 10px;
+}
+
+#header .nav > li > a:hover {
+    color: #F2A91D;
+}
+/* Sub header */
+#header .sub-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: -6px;
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#header .sub-nav li {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#header .sub-nav li .right-arrow-icon {
+    float: right;
+}
+
+#header .sub-nav > li:hover > a {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #F2A91D;
+}
+
+#header .nav > li:hover .sub-nav {
+    display: block;
+}
+/* Sub-nav-child */
+#header .sub-nav .sub-nav-child.sub-child-37 {
+    top: 37.2px;
+    left: 220px;
+}
+
+#header .sub-nav .sub-nav-child.sub-child-188 {
+    top: 188.2px;
+    left: 220px;
+}
+
+#header .sub-nav .sub-nav-child.sub-child-0 {
+    top: 0;
+    left: 220px;
+}
+
+#header .sub-nav .sub-nav-child.sub-child-75 {
+    top: 75px;
+    left: 220px;
+}
+
+#header .sub-nav li:hover .sub-nav-child {
+    display: block;
+}
+
+#header .sub-nav .sub-nav-child li:hover a {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #F2A91D;
+}

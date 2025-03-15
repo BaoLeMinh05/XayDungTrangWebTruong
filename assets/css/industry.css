@@ -1,0 +1,132 @@
+#industry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-color: #d7d7d7;
+}
+
+#industry .container {
+  padding: 100px 30px;
+  width: 1110px;
+  height: 600px;
+  background-color: #fff;
+}
+/* Chung */
+#industry .container .column-3,
+#industry .container .column-special {
+  position: relative;
+  float: left;
+  width: calc(100% / 3);
+  height: 207px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+#industry .container .column-3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: 0;
+  clear: left;
+}
+/* Column-special */
+
+#industry .container .column-special .description {
+    padding: 0px 0px;
+    padding-right: 50px;
+}
+
+#industry .container .column-special .description h3 {
+    margin: 18px 0px;
+    font-size: 24px;
+}
+
+#industry .container .column-special .description p {
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.6);
+}
+/* Column-3 */
+#industry .container .column-3 .description {
+  position: absolute;
+  padding: 0px 25px;
+  z-index: 99;
+}
+
+#industry .container .column-3.col-1 .description,
+#industry .container .column-3.col-2 .description,
+#industry .container .column-3.col-4 .description,
+#industry .container .column-3.col-5 .description {
+  top: 160px;
+}
+
+#industry .container .column-3.col-3 .description {
+  top: 140px;
+}
+
+#industry .container .column-3 .description .industry-name {
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+#industry .container .column-3 .description p {
+  display: none;
+  opacity: 0;
+}
+
+#industry .container .column-3 .description a {
+  display: block;
+  margin: 10px 0px;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #fff;
+  text-decoration: none;
+}
+/* Background-color */
+#industry .container .col-1:after {
+  background-color: #003471;
+}
+
+#industry .container .col-2:after {
+  background-color: #3cb878;
+}
+
+#industry .container .col-3:after {
+  background-color: #004a80;
+}
+
+#industry .container .col-4:after {
+  background-color: #20ccb2;
+}
+
+#industry .container .col-5:after {
+  background-color: #f26522;
+}
+/* Hover */
+#industry .container .column-3:hover:after {
+  opacity: 0.68;
+  background-color: #272f54;
+}
+
+#industry .container .column-3:hover .description {
+  top: 18px;
+  transition: 0.5s;
+}
+
+#industry .container .column-3:hover .description p {
+  display: block;
+  opacity: 1;
+  transform: 5s;
+}
+
+#industry .container .column-3:hover .description h3,
+#industry .container .column-3 .description p a:hover {
+    color: orange;
+}

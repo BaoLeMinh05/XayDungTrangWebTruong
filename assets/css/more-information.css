@@ -1,0 +1,62 @@
+/* Chung */
+.container .column-3 .item .item-text a,  
+#more-information .container .column-3 h3 a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*  */
+#more-information .container {
+    margin: 50px 174px;
+    height: 780px;
+}
+/* Column-3 */
+#more-information .container .column-3 {
+    padding: 0px 15px;
+    width: calc(100% / 3);
+    float: left;
+}
+
+#more-information .container .column-3 .title {
+    margin-bottom: 20px;
+}
+
+#more-information .container .column-3 .big-img {
+    width: 100%;
+}
+
+#more-information .container .column-3 > h3 {
+    margin-top: 10px;
+}
+
+#more-information .container .column-3 span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    color: gray;
+}
+/* Column-img */
+#more-information .container .column-img {
+}
+
+#more-information .container .column-img img {
+    width: 100%;
+}
+/* Item */
+#more-information .container .column-3 .item {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px;
+}
+
+.container .column-3 .item .item-img img {
+    width: 100px;
+}
+
+.container .column-3 .item .item-text {
+    margin-left: 10px;
+}
+/* Hover */
+.container .column-3 a:hover {
+    color: orange !important;
+}
