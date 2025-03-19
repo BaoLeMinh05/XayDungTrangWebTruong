@@ -26,26 +26,31 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 68px;
     font-family: 'Roboto';
     background-color: #272F54;
     z-index: 1;
 }
 
+#header .logo {
+    width: 12%;
+}
+
 #header .nav {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #header .nav > li {
     display: inline-block;
     position: relative;
-    margin: 0 6px;
+    margin: 0 10px;
 }
 
 #header .nav > li > a {
     font-size: 14px;
-    line-height: 80px;
+    line-height: 30px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -66,7 +71,7 @@
 #header .sub-nav {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: -6px;
     width: 220px;
     background-color: #fff;
