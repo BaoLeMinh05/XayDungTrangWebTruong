@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/css/TrangChu/banner.css">
   <link rel="stylesheet" href="assets/css/TrangChu/partner.css">
   <link rel="stylesheet" href="assets/css/TrangChu/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,15 +28,15 @@
     <!-- Begin: Header -->
     <div id="header">
       <img class="logo" src="assets/images/Logo_FPT_BlackWhite.png" alt="" />
-      <ul class="nav">
+      <ul id="MyNav" class="nav">
         <li>
           <a href=""><i class="bx bx-home home-icon"></i></a>
         </li>
         <li>
-          <a href="">
+          <a href="javascript:void(0);">
             Giới thiệu chung <i class="bx bxs-down-arrow down-arrow-icon"></i>
           </a>
-          <ul class="sub-nav">
+          <ul class="sub-nav" id="sub-nav">
             <li><a href="">Về FPT Education</a></li>
             <li>
               <a href="">Trường CĐ FPT Polytechnic<i class="bx bxs-right-arrow right-arrow-icon"></i></a>
@@ -49,8 +50,8 @@
           </ul>
         </li>
         <li>
-          <a href="">Tuyển sinh <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
-          <ul class="sub-nav">
+          <a href="javascript:void(0);">Tuyển sinh <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
+          <ul class="sub-nav" id="sub-nav">
             <li><a href="">Tuyển sinh 2025</a></li>
             <li><a href="">Đăng ký hồ sơ trực tuyến</a></li>
             <li><a href="">Nộp hồ sơ online</a></li>
@@ -69,8 +70,8 @@
           </ul>
         </li>
         <li>
-          <a href="">Chương trình đào tạo <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
-          <ul class="sub-nav">
+          <a href="javascript:void(0);">Chương trình đào tạo <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
+          <ul class="sub-nav" id="sub-nav">
             <li>
               <a href="">Công nghệ thông tin<i class="bx bxs-right-arrow right-arrow-icon"></i></i></a>
               <ul class="sub-nav-child sub-child-0">
@@ -113,7 +114,7 @@
           </ul>
         </li>
         <li>
-          <a href="">Hoạt động SV <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
+          <a href="javascript:void(0);">Hoạt động SV <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
           <ul class="sub-nav">
             <li>
               <a href="">Tin tức Poly<i class="bx bxs-right-arrow right-arrow-icon"></i></a>
@@ -144,7 +145,7 @@
         <li><a href="">Tin học bổng</a></li>
         <li><a href="">Thi TN THPT</a></li>
         <li>
-          <a href="">Tuyển dụng <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
+          <a href="javascript:void(0);">Tuyển dụng <i class="bx bxs-down-arrow down-arrow-icon"></i></a>
           <ul class="sub-nav">
             <li><a href="">Tuyển dụng giảng viên</a></li>
             <li><a href="">Việc làm & thực tập</a></li>
@@ -153,6 +154,11 @@
           </ul>
         </li>
       </ul>
+      <div class="icon-bar-container">
+        <a href="javascript:void(0);" class="icon-bar" onclick="ActiveNavBar()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
     </div>
     <!-- End: Header -->
     <!-- Begin: Slider -->
@@ -471,6 +477,25 @@
     </div>
     <!-- End: Footer -->
   </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("sub-nav");
+      if (x.className === "sub-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "sub-nav";
+      }
+    }
+
+    function ActiveNavBar() {
+      var x = document.getElementById("MyNav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+  </script>
 </body>
 
 </html>
