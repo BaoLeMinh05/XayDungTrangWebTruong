@@ -21,7 +21,7 @@
   height: 207px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #industry .container .column-3::after {
@@ -40,6 +40,8 @@
 /* Column-special */
 
 #industry .container .column-special .description {
+    position: absolute;
+    top: -18px;
     padding: 0px 0px;
     padding-right: 50px;
 }

@@ -15,13 +15,13 @@
     width: 80%;
 }
 
-.container .column-1 {
+#about-fpoly .container .column-1 {
     float: left;
     text-align: left;
     width: calc(100% / 4);
 }
 
-.container .column-1 img {
+#about-fpoly .container .column-1 img {
     width: 50px;
 }
 

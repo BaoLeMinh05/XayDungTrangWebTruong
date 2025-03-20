@@ -31,17 +31,17 @@
 
 @media screen and (max-width: 600px) {
 
-    /* Nav */
+    /* ----------------------Nav----------------------- */
     #header .nav.responsive {
-        overflow: auto;
+        display: block;
         flex-direction: column;
+        position: absolute;
+        top: 68px;
+        right: 12px;
+        width: 270px;
+        overflow: auto;
         background-color: #fff;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        display: block;
-        position: absolute;
-        right: 12px;
-        top: 68px;
-        width: 270px;
     }
 
     #header .nav.responsive li:first-child {
@@ -60,7 +60,7 @@
         color: #000;
     }
 
-    /* SubNav */
+    /* ------------------SubNav ---------------------*/
 
     #header .nav.responsive .sub-nav {
         display: none;
@@ -70,9 +70,9 @@
         left: -9px;
     }
 
-        #header .nav.responsive .sub-nav a {
-            padding-left: 20px;
-        }
+    #header .nav.responsive .sub-nav a {
+        padding-left: 20px;
+    }
 
     #header .nav.responsive .sub-nav.responsive {
         display: block;
@@ -81,12 +81,145 @@
     #header .nav.responsive .sub-nav li:hover .sub-nav-child {
         display: none;
     }
-    /* More info */
-        #more-information .container {
-            margin: 0;
-        }
-    /* Partner */
-        #partner .container {
-            display: inline;
-        }
+
+    /* -----------------------About------------------- */
+
+    #about-fpoly .container {
+        left: 50%;
+    }
+
+    #about-fpoly .container .column-1 {
+        margin-bottom: 20px;
+        width: calc(100% / 2);
+        text-align: center;
+    }
+
+    #about-fpoly .container .column-1 img {
+        width: 36px;
+    }
+
+    #about-fpoly .container .column-1 h1 {
+        font-size: 20px;
+    }
+
+    #about-fpoly .container .column-1 h4 {
+        font-size: 12px;
+    }
+
+    /* -------------------Industry--------------- */
+    #industry {
+        background-color: #fff;
+    }
+
+    #industry .container {
+        padding: 0px 30px;
+    }
+
+    #industry .container .column-3,
+    #industry .container .column-special {
+        width: calc(100% / 2);
+    }
+
+    /* Specical column */
+    #industry .container .column-special .description {
+        width: 100%;
+        padding: 0px;
+        padding-right: 8px;
+    }
+
+    #industry .container .column-special .description h3 {
+        font-size: 16px;
+    }
+
+    #industry .container .column-special .description {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    /* Column normal */
+    #industry .container .column-3 .description {
+        padding: 0px 10px;
+    }
+
+    #industry .container .column-3.col-1 .description,
+    #industry .container .column-3.col-2 .description,
+    #industry .container .column-3.col-4 .description,
+    #industry .container .column-3.col-5 .description {
+        top: 152px;
+    }
+
+    #industry .container .column-3.col-3 .description {
+        top: 114px;
+    }
+
+    #industry .container .column-3 .description .industry-name {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    #industry .container .column-3:hover .description p {
+        display: none;
+    }
+
+    /* -------------------------More info------------------ */
+    #more-information .container {
+        margin: 30px 0px;
+    }
+
+    #more-information .container .column-3 {
+        width: 100%;
+    }
+
+    #more-information .container .column-img img {
+        display: none;
+    }
+
+    /* --------------------------Partner--------------------- */
+    #partner {
+        height: 125px;
+    }
+
+    #partner .h2 {
+        display: none;
+    }
+
+    #partner .container {
+        overflow: scroll;
+        justify-content: space-between;
+    }
+
+    #partner .container .item {
+        margin: 0px 8px;
+    }
+
+    #partner .container .item img {
+        width: 60px;
+    }
+
+    /* -----------------Footer--------------- */
+    #footer {
+        padding: 32px 10px;
+        height: 1500px;
+    }
+
+    #footer .container .column-33 {
+        width: 100%;
+    }
+
+    #footer .container .column-33 img {
+        width: 200px;
+    }
+
+    #footer .container .column-33 a .social-icon {
+        font-size: 30px;
+    }
+
+    #footer .container .column-33 .title {
+        margin: 10px 0px;
+        padding: 0px !important;
+    }
+
+    #footer .container .column-33 .item {
+        padding: 0px;
+    }
 }

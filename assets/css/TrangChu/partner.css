@@ -20,10 +20,10 @@
 }
 
 #partner .container {
-    align-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 0px;
 }
 
 #partner .container .item {
