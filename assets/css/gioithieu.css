@@ -5,10 +5,13 @@
 }
 
 #content {
-    height: 5000px;
+    height: 5100px;
     margin-top: 110px;
     margin-left: 60px;
     margin-right: 60px;
+}
+#content iframe{
+    width: 100%;
 }
 
 #content iframe {
@@ -36,7 +39,11 @@
     text-align: center;
 }
 
-#content .taiday {
+#content .a1{
+    transform: translateX(13%);
+}
+
+#content .taiday{
     padding: 20px;
     text-align: center;
     background-color: red;
@@ -52,7 +59,9 @@
     color: brown;
 }
 
-/* #content .a2 img {
-    display: inline-block;
-    text-align: center;
-} */
+#content .banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
