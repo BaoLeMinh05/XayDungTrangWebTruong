@@ -10,6 +10,9 @@
     margin-left: 60px;
     margin-right: 60px;
 }
+#content iframe{
+    width: 100%;
+}
 
 #content h2{
     text-align: center;
@@ -31,15 +34,10 @@
     text-align: center;
 }
 
-#content .a1{
-    transform: translateX(13%);
-}
-
 #content .taiday{
     padding: 20px;
     text-align: center;
     background-color: red;
-    transform: translateX(180%);
     width: 250px;
 }
 
@@ -52,6 +50,7 @@
     color: brown;
 }
 
-#content .a2{
-    transform: translateX(35%);
+#content .a2 img{
+    display: inline-block;
+    text-align: center;
 }
