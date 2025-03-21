@@ -1,57 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#content{
+#content {
     height: 5000px;
     margin-top: 110px;
     margin-left: 60px;
     margin-right: 60px;
 }
 
-#content h2{
+#content iframe {
+    width: 100%;
+}
+
+#content h2 {
     text-align: center;
     margin: 20px;
     font-size: 30px;
 }
 
-#content p{
+#content p {
     margin-top: 30px;
-    margin-bottom:  30px;
+    margin-bottom: 30px;
     font-size: 15px;
 }
 
-#content h3{
+#content h3 {
+    margin-top: 40px;
     color: brown;
 }
 
-#content .i{
+#content .i {
     text-align: center;
 }
 
-#content .a1{
-    transform: translateX(13%);
-}
-
-#content .taiday{
+#content .taiday {
     padding: 20px;
     text-align: center;
     background-color: red;
-    transform: translateX(180%);
     width: 250px;
 }
 
-#content .taiday:hover{
+#content .taiday:hover {
     background-color: rgb(255, 101, 101);
 }
 
-#content .ph3{
+#content .ph3 {
     font-size: 18px;
     color: brown;
 }
 
-#content .a2{
-    transform: translateX(35%);
-}
+/* #content .a2 img {
+    display: inline-block;
+    text-align: center;
+} */
