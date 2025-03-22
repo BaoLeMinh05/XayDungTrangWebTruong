@@ -5,6 +5,8 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    /*------------------- Header -----------------------*/
     #header .nav {
         display: none;
     }
@@ -24,11 +26,8 @@
         margin-left: 20px;
         width: 140px;
     }
-}
 
-@media screen and (max-width: 600px) {
-
-    /* ----------------------Nav----------------------- */
+    /* Nav */
     #header .nav.responsive {
         display: block;
         flex-direction: column;
@@ -57,8 +56,7 @@
         color: #000;
     }
 
-    /* ------------------SubNav ---------------------*/
-
+    /* SubNav */
     #header .nav.responsive .sub-nav {
         display: none;
         position: relative;
@@ -158,7 +156,7 @@
         display: none;
     }
 
-    /* -------------------------More info------------------ */
+    /* --------------------More info------------------ */
     #more-information .container {
         margin: 30px 0px;
     }
@@ -219,6 +217,7 @@
     #footer .container .column-33 .item {
         padding: 0px;
     }
+
     /* -------------------- Giới thiệu ----------------------- */
     #content {
         margin: 0px;
